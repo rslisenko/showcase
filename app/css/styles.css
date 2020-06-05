@@ -433,14 +433,14 @@ form label {
       border: none;
       border-color: transparent; }
       .header .navbar-toggler span:nth-child(1) {
-        top: 1px; }
+        top: 0px; }
       .header .navbar-toggler span:nth-child(2) {
         left: 0;
-        top: calc(50% - 1px); }
+        top: calc(50% - 2px); }
       .header .navbar-toggler span:nth-child(3) {
         bottom: 0; }
   .header [aria-expanded=true] span:nth-child(1) {
-    top: 8px;
+    top: 9px;
     transform: rotate(45deg); }
   .header [aria-expanded=true] span:nth-child(2) {
     opacity: 0;
@@ -532,10 +532,10 @@ form label {
         @media all and (max-width: 576px) {
           .benefits__left .benefits-filter li {
             width: 100%; } }
-        .benefits__left .benefits-filter li:hover a {
-          color: #FC2D37; }
         .benefits__left .benefits-filter li a {
           position: relative; }
+          .benefits__left .benefits-filter li a:hover {
+            color: #FC2D37; }
           .benefits__left .benefits-filter li a:before {
             content: "";
             position: absolute;
@@ -1057,7 +1057,8 @@ form label {
         flex-grow: 2; }
         @media all and (max-width: 767px) {
           .schedule-a-call__right .calendar-wrapper .left {
-            width: 100%; } }
+            width: 100%;
+            margin-bottom: 30px; } }
       .schedule-a-call__right .calendar-wrapper .right {
         width: 250px; }
         .schedule-a-call__right .calendar-wrapper .right span {
@@ -1065,6 +1066,9 @@ form label {
           font-weight: bold; }
     .schedule-a-call__right .am-time-choises {
       margin-top: 55px; }
+      @media all and (max-width: 767px) {
+        .schedule-a-call__right .am-time-choises {
+          margin-top: 20px; } }
     .schedule-a-call__right .list {
       margin-top: 20px; }
       .schedule-a-call__right .list label {

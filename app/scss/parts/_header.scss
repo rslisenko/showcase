@@ -82,11 +82,11 @@
       border: none;
       border-color: transparent;
       &:nth-child(1) {
-        top: 1px;
+        top: 0px;
       }
       &:nth-child(2) {
         left: 0;
-        top: calc(50% - 1px);
+        top: calc(50% - 2px);
       }
       &:nth-child(3) {
         bottom: 0;
@@ -96,7 +96,7 @@
   [aria-expanded=true] {
     span {
       &:nth-child(1) {
-        top: 8px;
+        top: 9px;
         transform: rotate(45deg);
       }
       &:nth-child(2) {

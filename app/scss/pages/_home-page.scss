@@ -48,13 +48,11 @@
         @include mq($max-576) {
           width: 100%;
         }
-        &:hover {
-          a {
-            color: $red;
-          }
-        }
         a {
           position: relative;
+          &:hover {
+            color: $red;
+          }
           &:before {
             content: "";
             position: absolute;
