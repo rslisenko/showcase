@@ -11,9 +11,27 @@
     <link rel="stylesheet" href="./css/plugins/jquery-pseudo-ripple.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Document</title>
+    <title>Benefits</title>
 </head>
 <body>
+
+    <div class="info-message info-message--green">
+        <div class="close"></div>
+        <div class="info-message__inner">
+            <span class="info-message__title">Alice!</span>
+            <span class="info-message__text">Retirement & Financial Wellness</span>
+            <span class="info-message__status">LIVE NOW</span>
+            <a class="info-message__link" href="#">Joing now!</a>
+        </div>
+    </div>
+    <div class="info-message info-message--red">
+        <div class="close"></div>
+        <div class="info-message__inner">
+            <span class="info-message__title">View Live Fair!</span>
+            <span class="info-message__text">Sat Aug 15 2020  10:00 am to 12:00 pm CST</span>
+            <a class="info-message__link" href="#">Add to calendar</a>
+        </div>
+    </div>
 
     <!-- Begin header -->
     <header class="header">
@@ -60,91 +78,229 @@
     <!--  Begin main content  -->
     <div class="main-content">
 
-        <!--  Begin breadcrumbs -->
-        <nav aria-label="breadcrumb" class="width-default">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Benefit showcase</a></li>
-                <li class="breadcrumb-item active" aria-current="page"> Fidelity profile</li>
-            </ol>
-        </nav>
-        <!--  End breadcrumbs -->
-
-        <!-- Begin intro -->
-        <section class="intro width-default">
-            <div class="row">
-                <div class="intro__left col-lg-7">
+        <!-- Begin benefits -->
+        <section class="benefits">
+            <div class="benefits__header">
+                <div class="inner">
                     <div class="image-wrapper">
-                        <img src="images/Fidelity-Logo.svg" alt="f-logo">
-                        <p >Retirement & Financial Wellness</p>
+                        <img src="images/bb-logo.png" alt="bb-logo">
                     </div>
-                    <h2 class="title">Fidelity</h2>
-                    <div class="rating-wrapper">
-                        <ul class="rating">
-                            <li class="fill"></li>
-                            <li class="fill"></li>
-                            <li class="fill"></li>
-                            <li class=""></li>
-                            <li class=""></li>
-                        </ul>
-                    </div>
-                    <div class="text">
-                        <p>This is a demo. This information is for placeholder purposes only.
-                            Starting down the path to saving for your retirement may
-                            be easier than you think: Begin by enrolling in your 401(k), 403(b), or
-                            other available workplace savings plan. That's it. You don't have
-                            to be a financial guru. It won't take long at all to set up.</p>
-                    </div>
-                    <p class="bold">Interested? <a class="red" href="#">Learn how to access this benefit</a></p>
+                    <a class="btn btn--white btn--icon signal" href="#">Show live sessions</a>
                 </div>
-                <div class="intro__right col-lg-5">
-                    <div class="schedule-call">
-                        <div class="schedule-call__contacts">
-                            <a class="email" href="mailto:test@gmail.com"></a>
-                            <a class="phone" href="tel:111111111"></a>
+            </div>
+            <div class="benefits__left">
+                <div class="benefits-filter links-block">
+                    <div class="links-block__inner">
+                        <h5 class="links-block__title">filter by category</h5>
+                        <ul>
+                            <li class="active"><a href="#">All</a></li>
+                            <li><a href="#">Health  & Healthcare</a></li>
+                            <li><a href="#">Retirement & Financial Wellness</a></li>
+                            <li><a href="#">Disability & Life Insurance</a></li>
+                            <li><a href="#">Wellness Benefits</a></li>
+                            <li><a href="#">Work Life Support</a></li>
+                            <li><a href="#">Convenience & Transportation</a></li>
+                            <li><a href="#">Personal Development</a></li>
+                            <li><a href="#">Family Planning Support</a></li>
+                            <li><a href="#">Food & Nutrition</a></li>
+                            <li><a href="#">Gifts & Discounts</a></li>
+                            <li><a href="#">Additional Benefits</a></li>
+                        </ul>
+
+                        <div class="filter-by-wrapper">
+                            <select class="filter-by">
+                                <option value="filter-by-state">FILTER BY STATE</option>
+                                <option value="option-2">Option 2</option>
+                                <option value="option-3">Option 3</option>
+                            </select>
                         </div>
-                        <div class="schedule-call__person">
-                            <h4>Jane Doe</h4>
-                            <p>Bluebird Account Executive</p>
-                            <div class="btn">Schedule a call</div>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits__right">
+                <div class="benefits-list">
+                    <div class="list-item">
+                        <div class="inner">
+                            <div class="image-wrapper">
+                                <img src="images/logos/logo-1.svg" alt="logo">
+                            </div>
+                            <p class="title">Work Life Support</p>
+                            <div class="text">
+                                <p>Nullam ipsum quam, sagittis eu interdum eget, finibus at lectus.
+                                    In hac habitasse platea dictumst. Phasellus quis augue nec urna
+                                    dictum elementum et et turpis.</p>
+                                <div class="text__bottom">
+                                    <span class="date">Aug 15-25</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="schedule-call__sessions">
-                            <h4 class="title">Live info sessions</h4>
-                            <div class="sessions-list">
-                                <div class="list-item">
-                                    <div class="list-item__left">
-                                        <h5>Talk name by company</h5>
-                                        <span class="status live-red">Live now</span>
-                                    </div>
-                                    <div class="list-item__right">
-                                        <a href="#" class="btn btn--white btn--icon talk">Join talk</a>
-                                    </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="inner">
+                            <div class="image-wrapper">
+                                <img src="images/logos/logo-2.svg" alt="logo">
+                            </div>
+                            <p class="title">Work Life Support</p>
+                            <div class="text">
+                                <p>Nullam ipsum quam, sagittis eu interdum eget, finibus at lectus.
+                                    In hac habitasse platea dictumst. Phasellus quis augue nec urna
+                                    dictum elementum et et turpis.</p>
+                                <div class="text__bottom">
+                                    <a class="btn btn--icon signal-white" href="#">Live now</a>
+                                    <span class="date">Aug 15-25</span>
                                 </div>
-                                <div class="list-item">
-                                    <div class="list-item__left">
-                                        <h5>Talk name by company</h5>
-                                        <p>Wed, Aug 12 2020</p>
-                                    </div>
-                                    <div class="list-item__right">
-                                        <a href="#" class="btn btn--white btn--icon calendar">Add to calendar</a>
-                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="inner">
+                            <div class="image-wrapper">
+                                <img src="images/logos/logo-3.svg" alt="logo">
+                            </div>
+                            <p class="title">Retirement & Financial Wellness</p>
+                            <div class="text">
+                                <p>Nullam ipsum quam, sagittis eu interdum eget, finibus at lectus.
+                                    In hac habitasse platea dictumst. Phasellus quis augue nec urna
+                                    dictum elementum et et turpis.</p>
+                                <div class="text__bottom">
+                                    <a class="btn btn--icon signal-white" href="#">Live now</a>
+                                    <span class="date">Aug 15-25</span>
                                 </div>
-                                <div class="list-item">
-                                    <div class="list-item__left">
-                                        <h5>Talk name by company</h5>
-                                        <p>Wed, Aug 12 2020</p>
-                                    </div>
-                                    <div class="list-item__right">
-                                        <a href="#" class="btn btn--white btn--icon calendar">Add to calendar</a>
-                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="inner">
+                            <div class="image-wrapper">
+                                <img src="images/logos/logo-3.svg" alt="logo">
+                            </div>
+                            <p class="title">Retirement & Financial Wellness</p>
+                            <div class="text">
+                                <p>Nullam ipsum quam, sagittis eu interdum eget, finibus at lectus.
+                                    In hac habitasse platea dictumst. Phasellus quis augue nec urna
+                                    dictum elementum et et turpis.</p>
+                                <div class="text__bottom">
+                                    <a class="btn btn--icon signal-white" href="#">Live now</a>
+                                    <span class="date">Aug 15-25</span>
                                 </div>
-                                <div class="list-item">
-                                    <div class="list-item__left">
-                                        <h5>Talk name by company</h5>
-                                        <p>Past talk</p>
-                                    </div>
-                                    <div class="list-item__right">
-                                        <a href="#" class="btn btn--white btn--icon play">Reply video</a>
-                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="inner">
+                            <div class="image-wrapper">
+                                <img src="images/logos/logo-3.svg" alt="logo">
+                            </div>
+                            <p class="title">Retirement & Financial Wellness</p>
+                            <div class="text">
+                                <p>Nullam ipsum quam, sagittis eu interdum eget, finibus at lectus.
+                                    In hac habitasse platea dictumst. Phasellus quis augue nec urna
+                                    dictum elementum et et turpis.</p>
+                                <div class="text__bottom">
+                                    <a class="btn btn--icon signal-white" href="#">Live now</a>
+                                    <span class="date">Aug 15-25</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="inner">
+                            <div class="image-wrapper">
+                                <img src="images/logos/logo-4.svg" alt="logo">
+                            </div>
+                            <p class="title">Work Life Support</p>
+                            <div class="text">
+                                <p>Nullam ipsum quam, sagittis eu interdum eget, finibus at lectus.
+                                    In hac habitasse platea dictumst. Phasellus quis augue nec urna
+                                    dictum elementum et et turpis.</p>
+                                <div class="text__bottom">
+                                    <a class="btn btn--icon signal-white" href="#">Live now</a>
+                                    <span class="date">Aug 15-25</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="inner">
+                            <div class="image-wrapper">
+                                <img src="images/logos/logo-5.svg" alt="logo">
+                            </div>
+                            <p class="title">Work Life Support</p>
+                            <div class="text">
+                                <p>Nullam ipsum quam, sagittis eu interdum eget, finibus at lectus.
+                                    In hac habitasse platea dictumst. Phasellus quis augue nec urna
+                                    dictum elementum et et turpis.</p>
+                                <div class="text__bottom">
+                                    <a class="btn btn--icon signal-white" href="#">Live now</a>
+                                    <span class="date">Aug 15-25</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="inner">
+                            <div class="image-wrapper">
+                                <img src="images/logos/logo-5.svg" alt="logo">
+                            </div>
+                            <p class="title">Work Life Support</p>
+                            <div class="text">
+                                <p>Nullam ipsum quam, sagittis eu interdum eget, finibus at lectus.
+                                    In hac habitasse platea dictumst. Phasellus quis augue nec urna
+                                    dictum elementum et et turpis.</p>
+                                <div class="text__bottom">
+                                    <a class="btn btn--icon signal-white" href="#">Live now</a>
+                                    <span class="date">Aug 15-25</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="inner">
+                            <div class="image-wrapper">
+                                <img src="images/logos/logo-5.svg" alt="logo">
+                            </div>
+                            <p class="title">Work Life Support</p>
+                            <div class="text">
+                                <p>Nullam ipsum quam, sagittis eu interdum eget, finibus at lectus.
+                                    In hac habitasse platea dictumst. Phasellus quis augue nec urna
+                                    dictum elementum et et turpis.</p>
+                                <div class="text__bottom">
+                                    <a class="btn btn--icon signal-white" href="#">Live now</a>
+                                    <span class="date">Aug 15-25</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="inner">
+                            <div class="image-wrapper">
+                                <img src="images/logos/logo-5.svg" alt="logo">
+                            </div>
+                            <p class="title">Work Life Support</p>
+                            <div class="text">
+                                <p>Nullam ipsum quam, sagittis eu interdum eget, finibus at lectus.
+                                    In hac habitasse platea dictumst. Phasellus quis augue nec urna
+                                    dictum elementum et et turpis.</p>
+                                <div class="text__bottom">
+                                    <a class="btn btn--icon signal-white" href="#">Live now</a>
+                                    <span class="date">Aug 15-25</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="inner">
+                            <div class="image-wrapper">
+                                <img src="images/logos/logo-1.svg" alt="logo">
+                            </div>
+                            <p class="title">Work Life Support</p>
+                            <div class="text">
+                                <p>Nullam ipsum quam, sagittis eu interdum eget, finibus at lectus.
+                                    In hac habitasse platea dictumst. Phasellus quis augue nec urna
+                                    dictum elementum et et turpis.</p>
+                                <div class="text__bottom">
+                                    <a class="btn btn--icon signal-white" href="#">Live now</a>
+                                    <span class="date">Aug 15-25</span>
                                 </div>
                             </div>
                         </div>
@@ -152,183 +308,15 @@
                 </div>
             </div>
         </section>
-        <!-- End intro -->
-
-        <!-- Begin benefit -->
-        <section class="benefit">
-            <div class="benefit__inner">
-                <h2 class="benefit__title">Get to know this benefit</h2>
-                <div class="benefit__content">
-                    <p>This is a demo. This information is for placeholder purposes only. Of all the factors that influence the size of your nest egg,
-                        you control the one that matters most: How much you contribute to it. You can save whatever you like each year, up to
-                        the pre-­tax contribution limit set by the IRS.</p>
-                    <p>Your current income and monthly budget will have a lot to do with how much you can save. But if you're trying to
-                        find ways to save more, here are a few things to consider:</p>
-                    <p>Take advantage of your employer contribution, if your plan offers it. Your employer may match some, or all, of what you contribute,
-                        making this one of the fastest ways to boost your balance.</p>
-                    <blockquote>If you're 50 or older, catch up on your contributions. Saving later in
-                        life can still pay off. You may be able to contribute an additional amount each year,
-                        depending on the plan you're in.</blockquote>
-                </div>
-                <div class="benefit__image">
-                    <img src="images/image-1.jpg" alt="image">
-                </div>
-                <div class="benefit__content">
-                    <p>Automate your savings. Setting up automatic contributions each month and automatically
-                        increasing your contributions by 1% or more each year (if your plan allows) are
-                        great ways to save, since the money goes directly to your retirement account.</p>
-                    <p>If you're 50 or older, catch up on your contributions. Saving later in life
-                        can still pay off. You may be able to contribute an additional amount each year,
-                        depending on the plan you're in.</p>
-                </div>
-            </div>
-        </section>
-        <!-- End benefit -->
-
-        <!-- Begin latest-videos -->
-        <section class="latest-videos width-default">
-            <div class="latest-videos__left">
-                <h2 class="title">Our latest videos</h2>
-                <div class="latest-videos-list">
-                    <div class="list-item">
-                        <div class="list-item__inner">
-                            <a class="video-link" href="https://vimeo.com/192376447" data-fancybox>
-                                <div class="info">
-                                    <div class="info__top">
-                                        <p class="video-name">Video name</p>
-                                        <p class="speaker">Speaker</p>
-                                    </div>
-                                    <div class="info__bottom">
-                                        <p class="category">Category</p>
-                                    </div>
-                                </div>
-                                <img src="images/video-image-1.jpg" alt="video">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <div class="list-item__inner">
-                            <a class="video-link" href="https://vimeo.com/194555118" data-fancybox>
-                                <div class="info">
-                                    <div class="info__top">
-                                        <p class="video-name">Video name</p>
-                                        <p class="speaker">Speaker</p>
-                                    </div>
-                                    <div class="info__bottom">
-                                        <p class="category">Category</p>
-                                    </div>
-                                </div>
-                                <img src="images/video-image-1.jpg" alt="video">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <div class="list-item__inner">
-                            <a class="video-link" href="https://vimeo.com/192376447" data-fancybox>
-                                <div class="info">
-                                    <div class="info__top">
-                                        <p class="video-name">Video name</p>
-                                        <p class="speaker">Speaker</p>
-                                    </div>
-                                    <div class="info__bottom">
-                                        <p class="category">Category</p>
-                                    </div>
-                                </div>
-                                <img src="images/video-image-1.jpg" alt="video">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <div class="list-item__inner">
-                            <a class="video-link" href="https://vimeo.com/192376447" data-fancybox>
-                                <div class="info">
-                                    <div class="info__top">
-                                        <p class="video-name">Video name</p>
-                                        <p class="speaker">Speaker</p>
-                                    </div>
-                                    <div class="info__bottom">
-                                        <p class="category">Category</p>
-                                    </div>
-                                </div>
-                                <img src="images/video-image-1.jpg" alt="video">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <div class="list-item__inner">
-                            <a class="video-link" href="https://vimeo.com/192376447" data-fancybox>
-                                <div class="info">
-                                    <div class="info__top">
-                                        <p class="video-name">Video name</p>
-                                        <p class="speaker">Speaker</p>
-                                    </div>
-                                    <div class="info__bottom">
-                                        <p class="category">Category</p>
-                                    </div>
-                                </div>
-                                <img src="images/video-image-1.jpg" alt="video">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="latest-videos__right">
-                <h2 class="title">Extras</h2>
-                <div class="links-block">
-                    <div class="links-block__inner">
-                        <h5 class="links-block__title">Helpful Information Documents & Links</h5>
-                        <ul>
-                            <li class="doc">
-                                <h5>Document title mockup</h5>
-                                <a href="#">Download</a>
-                            </li>
-                            <li class="arrow">
-                                <h5>Contribution Calculator</h5>
-                                <a href="#">See site</a>
-                            </li>
-                            <li class="doc">
-                                <h5>Document title mockup</h5>
-                                <a href="#">Download</a>
-                            </li>
-                            <li class="arrow">
-                                <h5>Contribution Calculator</h5>
-                                <a href="#">See site</a>
-                            </li>
-                            <li class="doc">
-                                <h5>Document title mockup</h5>
-                                <a href="#">Download</a>
-                            </li>
-                            <li class="arrow">
-                                <h5>Link to website title</h5>
-                                <a href="#">See site</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End latest-videos -->
-
-        <!-- Begin get-benefit -->
-        <section class="get-benefit dark-block">
-            <div class="get-benefit__inner width-default">
-                <h2 class="get-benefit__title">How to access this benefit</h2>
-                <div class="get-benefit__text">
-                    <p>Access your Fidelity account to change your contributions, begin
-                    a contribution and see fund performance. You can access your
-                    Fidelity account any time by clicking below.</p>
-                </div>
-                <div class="btn-wrapper">
-                    <a class="btn" href="#">Get it</a>
-                </div>
-            </div>
-        </section>
-        <!-- End access-benefit -->
+        <!-- End benefits -->
 
         <!-- Begin featured-links -->
         <section class="featured-links">
             <div class="featured-links__inner width-default">
                 <div class="featured-links__left">
+                    <div class="image-wrapper">
+                        <img src="images/bb-logo.svg" alt="logo">
+                    </div>
                     <div class="image-wrapper">
                         <img src="images/logo.svg" alt="logo">
                     </div>

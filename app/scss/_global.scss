@@ -43,6 +43,9 @@ blockquote {
   font-weight: bold;
   line-height: 28px;
   text-align: center;
+  @include mq($max-767) {
+    padding: 0 50px;
+  }
   &:before,
   &:after {
     content: "";
@@ -165,7 +168,7 @@ button {
 .width-default {
   max-width: $width_default;
   margin: 0 auto;
-  padding: 0 $gutters;
+  padding: 0 15px;
 }
 .breadcrumb {
   @include width(1310px);
@@ -174,6 +177,9 @@ button {
   background-color: $white;
   font-size: 14px;
   .breadcrumb-item {
+    @include mq($max-767) {
+      margin-bottom: 10px;
+    }
     &.active {
       font-weight: bold;
       color: $black;
@@ -306,10 +312,19 @@ form {
   background-color: $black;
   color: $white;
   font-size: 16px;
+  padding-right: 45px;
+  @include mq($max-767) {
+    height: auto;
+    padding: 15px 45px 15px 30px;
+    text-align: center;
+  }
   &__title {
     position: relative;
     padding-left: 35px;
     font-weight: 900;
+    @include mq($max-767) {
+
+    }
     &:before {
       content: "";
       position: absolute;
@@ -328,6 +343,9 @@ form {
     padding-left: 20px;
     padding-right: 20px;
     font-weight: 300;
+    @include mq($max-767) {
+      display: block;
+    }
   }
   &__status {
     text-transform: uppercase;
@@ -335,6 +353,10 @@ form {
   &__link {
     padding-left: 40px;
     text-decoration: underline;
+    @include mq($max-767) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
   &--red {
     background-color: $red;

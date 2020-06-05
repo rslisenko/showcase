@@ -3,9 +3,13 @@
   position: fixed;
   z-index: 110;
   width: 520px;
+  max-width: 94%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @include mq($max-576) {
+
+  }
   .title {
     font-size: 22px;
     font-weight: 800;

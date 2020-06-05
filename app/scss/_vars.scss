@@ -17,13 +17,28 @@ $bg_gray: #FCF9F9;
 // fonts
 $font: 'Gothic A1', sans-serif;
 
-//
+// width
 $width_default: 1280px;
-$gutters: 15px;
+$max-1280: "(max-width: 1280px)";
+$max-1279: "(max-width: 1279px)";
+$max-1200: "(max-width: 1200px)";
+$max-1024: "(max-width: 1024px)";
+$max-1023: "(max-width: 1023px)";
+$max-992: "(max-width: 992px)";
+$max-991: "(max-width: 991px)";
+$max-768: "(max-width: 768px)";
+$max-767: "(max-width: 767px)";
+$max-576: "(max-width: 576px)";
+$max-415: "(max-width: 415px)";
+$max-376: "(max-width: 376px)";
 
 // mixins
 @mixin width($width) {
   max-width: $width;
   margin: 0 auto;
-  padding: 0 $gutters;
+  padding: 0 15px;
+}
+
+@mixin mq($screen) {
+  @media all and #{$screen} { @content; }
 }

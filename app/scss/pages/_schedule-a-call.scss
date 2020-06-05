@@ -47,9 +47,17 @@
   &__right {
     width: calc(100% - 390px);
     padding-left: 35px;
+    @include mq($max-991) {
+      width: 100%;
+      margin-top: 30px;
+      padding-left: 0;
+    }
     .inner {
       padding: 35px 65px 50px;
       background-color: #F5F5F5;
+      @include mq($max-767) {
+        padding: 30px 30px 30px;
+      }
     }
     .title {
       font-size: 22px;
@@ -72,6 +80,9 @@
       margin-bottom: 50px;
       .left {
         flex-grow: 2;
+        @include mq($max-767) {
+          width: 100%;
+        }
       }
       .right {
         width: 250px;
