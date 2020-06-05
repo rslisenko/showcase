@@ -1,0 +1,34 @@
+/* FOOTER */
+
+.footer {
+  background-color: $light_gray;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__links {
+    ul {
+      display: flex;
+    }
+    a {
+      font-size: 14px;
+      font-weight: 800;
+      margin-right: 20px;
+    }
+  }
+  &__socials {
+    ul {
+      display: flex;
+    }
+  }
+  .copyright {
+    padding: 13px 15px;
+    background-color: $black;
+    p {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+  }
+}

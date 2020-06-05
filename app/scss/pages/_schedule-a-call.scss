@@ -1,0 +1,139 @@
+/* SCHEDULE A CALL */
+.schedule-a-call {
+  @include width(1310px);
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 140px;
+  &__left {
+    width: 390px;
+    .contacts {
+      position: relative;
+      padding: 75px 28px 20px;
+      background-color: $light_gray;
+      &__header {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        a {
+          width: 65px;
+          height: 65px;
+          background-size: 20px;
+          background-position: center;
+          background-repeat: no-repeat;
+          &.email {
+            background-color: #EFEDEC;
+            background-image: url('../../images/letter-icon.svg');
+          }
+          &.phone {
+            background-color: #FCF9F9;
+            background-image: url('../../images/phone-icon.svg');
+          }
+        }
+      }
+      &__person {
+        h4 {
+          font-size: 22px;
+          font-weight: 800;
+          margin-bottom: 5px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  &__right {
+    width: calc(100% - 390px);
+    padding-left: 35px;
+    .inner {
+      padding: 35px 65px 50px;
+      background-color: #F5F5F5;
+    }
+    .title {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 35px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    .link {
+      display: inline-block;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    .calendar-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      .left {
+        flex-grow: 2;
+      }
+      .right {
+        width: 250px;
+        span {
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+    }
+    .am-time-choises {
+      margin-top: 55px;
+    }
+    .list {
+      margin-top: 20px;
+      label {
+        position: relative;
+        width: 32%;
+        padding: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+        border-radius: 20px;
+      }
+      input[type="radio"] {
+        display: none;
+        &:checked {
+          & + label {
+            background-color: $red;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  .btn-wrapper {
+    text-align: right;
+    .confirm-btn {
+      width: 180px;
+    }
+  }
+
+  //
+  .my-calendar {
+    max-width: 350px;
+    margin-top: 50px;
+    .month-head {
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+    .ic-arrow-angle-right,
+    .ic-arrow-angle-left, {
+      &:before {
+        color: $black;
+      }
+    }
+    .ic-target,
+    .ic-arrow-circle-angle-down {
+      display: none;
+    }
+  }
+}

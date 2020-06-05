@@ -1,0 +1,17 @@
+// general styles
+@import "fonts";
+@import "vars";
+@import "global";
+
+// parts
+@import "parts/header";
+@import "parts/footer";
+
+// pages
+@import "pages/home-page";
+@import "pages/benefits";
+@import "pages/schedule-a-call";
+@import "pages/invite-a-calendar";
+@import "pages/create-account";
+@import "pages/sign-in";
+

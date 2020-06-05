@@ -1,0 +1,29 @@
+/* VARS */
+
+// colors
+$black: #000000;
+$white: #ffffff;
+$red: #FC2D37;
+$gray: #666666;
+$light_gray: #F5F5F5;
+$hunter: #404B42;
+$green: #2D9D40;
+
+// additional colors
+$overlay_color: rgba($black, 0.8);
+$red_shadow: rgba($red, 0.2);
+$bg_gray: #FCF9F9;
+
+// fonts
+$font: 'Gothic A1', sans-serif;
+
+//
+$width_default: 1280px;
+$gutters: 15px;
+
+// mixins
+@mixin width($width) {
+  max-width: $width;
+  margin: 0 auto;
+  padding: 0 $gutters;
+}
