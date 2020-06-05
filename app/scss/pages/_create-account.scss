@@ -53,6 +53,13 @@
       .socials {
         margin-top: 20px;
         margin-bottom: 20px;
+        a {
+          width: 16px;
+          height: 16px;
+          &:hover {
+            fill: $red;
+          }
+        }
       }
       b {
         font-weight: 900;

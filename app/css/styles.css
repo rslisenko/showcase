@@ -30,8 +30,10 @@ a {
     height: 1px;
     background-color: #FC2D37; }
 
-img {
-  max-width: 100%; }
+img,
+svg {
+  max-width: 100%;
+  max-height: 100%; }
 
 blockquote {
   position: relative;
@@ -482,6 +484,14 @@ form label {
     margin-right: 20px; }
   .footer__socials ul {
     display: flex; }
+  .footer__socials a {
+    width: 16px;
+    height: 16px; }
+    .footer__socials a:hover {
+      fill: #FC2D37; }
+    .footer__socials a svg {
+      max-width: 100%;
+      max-height: 100%; }
   .footer .copyright {
     padding: 13px 15px;
     background-color: #000000; }
@@ -1229,6 +1239,11 @@ form label {
       .account-page__body .left .socials {
         margin-top: 20px;
         margin-bottom: 20px; }
+        .account-page__body .left .socials a {
+          width: 16px;
+          height: 16px; }
+          .account-page__body .left .socials a:hover {
+            fill: #FC2D37; }
       .account-page__body .left b {
         font-weight: 900; }
       .account-page__body .left .btn {
