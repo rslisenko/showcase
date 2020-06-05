@@ -2,7 +2,8 @@
 /* VARS */
 /* GLOBAL */
 body {
-  font-family: "Gothic A1", sans-serif; }
+  font-family: "Gothic A1", sans-serif;
+  transition: 0.5s; }
 
 p {
   font-size: 14px;
@@ -296,6 +297,8 @@ form label {
 
 .info-message {
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 100;
   display: flex;
   width: 100%;
@@ -305,12 +308,15 @@ form label {
   background-color: #000000;
   color: #ffffff;
   font-size: 16px;
-  padding-right: 45px; }
+  padding-right: 45px;
+  transition: 0.5s; }
   @media all and (max-width: 767px) {
     .info-message {
       height: auto;
       padding: 15px 45px 15px 30px;
       text-align: center; } }
+  .info-message.hide {
+    transform: translateY(-100%); }
   .info-message__title {
     position: relative;
     padding-left: 35px;

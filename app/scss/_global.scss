@@ -2,6 +2,7 @@
 
 body {
   font-family: $font;
+  transition: 0.5s;
 }
 p {
   font-size: 14px;
@@ -321,6 +322,8 @@ form {
 }
 .info-message {
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 100;
   display: flex;
   width: 100%;
@@ -331,10 +334,14 @@ form {
   color: $white;
   font-size: 16px;
   padding-right: 45px;
+  transition: 0.5s;
   @include mq($max-767) {
     height: auto;
     padding: 15px 45px 15px 30px;
     text-align: center;
+  }
+  &.hide {
+    transform: translateY(-100%);
   }
   &__title {
     position: relative;
