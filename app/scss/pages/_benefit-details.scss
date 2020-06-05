@@ -67,6 +67,10 @@
           background-size: 20px;
           background-position: center;
           background-repeat: no-repeat;
+          border: 1px solid transparent;
+          &:hover {
+            border: 1px solid $gray;
+          }
           &.email {
             background-color: #EFEDEC;
             background-image: url('../images/letter-icon.svg');
@@ -248,9 +252,6 @@
           border-top-width: 10px;
           border-bottom-width: 10px;
           border-left-color: $white;
-        }
-        &:hover {
-
         }
       }
       .info {
