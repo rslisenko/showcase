@@ -383,6 +383,13 @@ form label {
     margin: 0 auto; }
     .header .navbar__left {
       flex-grow: 2; }
+      @media all and (max-width: 767px) {
+        .header .navbar__left {
+          width: 100%;
+          text-align: center; } }
+      @media all and (max-width: 767px) {
+        .header .navbar__left .navbar-brand {
+          margin-right: 0; } }
       @media all and (max-width: 576px) {
         .header .navbar__left .navbar-brand {
           max-width: 120px; } }
@@ -402,6 +409,9 @@ form label {
       justify-content: flex-end;
       align-items: center;
       flex-grow: 2; }
+      @media all and (max-width: 767px) {
+        .header .navbar__right {
+          justify-content: center; } }
     .header .navbar .user-info {
       margin-right: 23px;
       font-size: 22px;
@@ -411,7 +421,8 @@ form label {
           font-size: 20px; } }
       @media all and (max-width: 767px) {
         .header .navbar .user-info {
-          font-size: 18px; } }
+          font-size: 18px;
+          margin-right: 0; } }
       .header .navbar .user-info__name {
         margin-left: 5px;
         font-weight: bold; }
@@ -424,6 +435,12 @@ form label {
     z-index: 10;
     width: 34px;
     height: 22px; }
+    @media all and (max-width: 767px) {
+      .header .navbar-toggler {
+        position: absolute;
+        right: 20px;
+        top: 35px;
+        transform: translateY(-50%); } }
     .header .navbar-toggler:hover {
       border-color: transparent; }
       .header .navbar-toggler:hover span {
@@ -517,6 +534,10 @@ form label {
       justify-content: space-between;
       align-items: flex-end;
       padding: 35px 15px 35px; }
+      @media all and (max-width: 767px) {
+        .benefits__header .inner {
+          flex-wrap: wrap;
+          justify-content: center; } }
     .benefits__header .btn {
       height: 38px;
       padding: 0 55px 0 18px;
@@ -524,6 +545,9 @@ form label {
       font-weight: 800;
       background-size: 18px;
       background-position: calc(100% - 20px) center; }
+      @media all and (max-width: 767px) {
+        .benefits__header .btn {
+          margin-top: 20px; } }
   .benefits__left {
     width: 330px; }
     @media all and (max-width: 991px) {
@@ -988,6 +1012,9 @@ form label {
     width: 60%;
     padding-top: 80px;
     padding-left: 20px; }
+    @media all and (max-width: 767px) {
+      .featured-links__right {
+        padding-left: 0; } }
     .featured-links__right .list li {
       font-size: 14px;
       font-weight: 500;

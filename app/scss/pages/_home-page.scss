@@ -12,6 +12,10 @@
       justify-content: space-between;
       align-items: flex-end;
       padding: 35px 15px 35px;
+      @include mq($max-767) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
     .btn {
       height: 38px;
@@ -20,6 +24,9 @@
       font-weight: 800;
       background-size: 18px;
       background-position: calc(100% - 20px) center;
+      @include mq($max-767) {
+        margin-top: 20px;
+      }
     }
   }
   &__left {

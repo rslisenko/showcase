@@ -8,7 +8,14 @@
     margin: 0 auto;
     &__left {
       flex-grow: 2;
+      @include mq($max-767) {
+        width: 100%;
+        text-align: center;
+      }
       .navbar-brand {
+        @include mq($max-767) {
+          margin-right: 0;
+        }
         @include mq($max-576) {
           max-width: 120px;
         }
@@ -33,6 +40,9 @@
       justify-content: flex-end;
       align-items: center;
       flex-grow: 2;
+      @include mq($max-767) {
+        justify-content: center;
+      }
     }
     .user-info {
       margin-right: 23px;
@@ -43,6 +53,7 @@
       }
       @include mq($max-767) {
         font-size: 18px;
+        margin-right: 0;
       }
       &__name {
         margin-left: 5px;
@@ -62,6 +73,12 @@
     z-index: 10;
     width: 34px;
     height: 22px;
+    @include mq($max-767) {
+      position: absolute;
+      right: 20px;
+      top: 35px;
+      transform: translateY(-50%);
+    }
     &:hover {
       border-color: transparent;
       span {

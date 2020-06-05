@@ -417,6 +417,9 @@
     width: 60%;
     padding-top: 80px;
     padding-left: 20px;
+    @include mq($max-767) {
+      padding-left: 0;
+    }
     .list {
       li {
         font-size: 14px;
