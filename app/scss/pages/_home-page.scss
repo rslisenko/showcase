@@ -24,6 +24,9 @@
   }
   &__left {
     width: 330px;
+    @include mq($max-991) {
+      width: 300px;
+    }
     @include mq($max-767) {
       width: 100%;
       padding-right: 20px;
@@ -97,6 +100,9 @@
   }
   &__right {
     width: calc(100% - 330px);
+    @include mq($max-991) {
+      width: calc(100% - 300px);
+    }
     @include mq($max-767) {
       width: 100%;
       margin-top: 50px;
@@ -117,6 +123,9 @@
           width: 50%;
         }
         @include mq($max-991) {
+          padding: 20px 10px;
+        }
+        @include mq($max-480) {
           width: 350px;
         }
         .inner {

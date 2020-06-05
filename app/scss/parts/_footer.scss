@@ -2,6 +2,9 @@
 
 .footer {
   background-color: $light_gray;
+  @include mq($max-767) {
+    text-align: center;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;

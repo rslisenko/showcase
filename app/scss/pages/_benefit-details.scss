@@ -109,6 +109,11 @@
             flex-wrap: wrap;
             margin-bottom: 40px;
           }
+          &__left {
+            @include mq($max-576) {
+              width: 100%;
+            }
+          }
           h5 {
             font-size: 18px;
             font-weight: 800;
@@ -207,11 +212,45 @@
       }
       &__inner {
         position: relative;
+        padding-bottom: 56%;
         &:hover {
           .info {
             z-index: 1;
             background-color: rgba($black, 0.3);
           }
+        }
+      }
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      .play-btn {
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background-color: $black;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 30px;
+          transform: translate(-50%, -50%);
+          border: 0 solid transparent;
+          border-left-width: 15px;
+          border-top-width: 10px;
+          border-bottom-width: 10px;
+          border-left-color: $white;
+        }
+        &:hover {
+
         }
       }
       .info {
@@ -262,6 +301,9 @@
       font-size: 14px;
       color: #666666;
       text-decoration: underline;
+      &:hover {
+        color: $red;
+      }
     }
     .title {
       padding-left: 40px;
@@ -339,6 +381,9 @@
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 50px;
+    @include mq($max-767) {
+      justify-content: center;
+    }
     @include mq($max-576) {
       flex-wrap: wrap;
     }
@@ -357,6 +402,9 @@
     justify-content: flex-end;
     align-content: flex-end;
     align-items: flex-end;
+    @include mq($max-767) {
+      justify-content: center;
+    }
     @include mq($max-576) {
       width: 100%;
     }

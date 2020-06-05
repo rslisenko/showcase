@@ -62,6 +62,12 @@
     z-index: 10;
     width: 34px;
     height: 22px;
+    &:hover {
+      border-color: transparent;
+      span {
+        background-color: $black;
+      }
+    }
     &:focus {
       outline: none;
     }
